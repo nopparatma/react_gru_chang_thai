@@ -1,10 +1,7 @@
-import Nav from "@/app/components/Nav";
-
 export default function Home() {
   return (
     <main>
-      <Nav />
-      <div className="h-[100vh] justify-center items-center flex-col text-center">
+      <div className="container h-[100vh] justify-center items-center flex-col text-center">
         <h1 className="text-[28px] font-bold md-[25px]">Home Page</h1>
         <p className="text-[gray] md-[15px]">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
