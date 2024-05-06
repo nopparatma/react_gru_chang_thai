@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Link } from "../navigation";
+import LocalSwitcher from "./LocalSwitcher";
 
 function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -42,6 +43,7 @@ function Navbar() {
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
+              <LocalSwitcher />
             </ul>
           </nav>
         </div>

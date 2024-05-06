@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Navbar from "../../components/Navbar";
-import { useMessages } from "next-intl";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,8 +28,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <div className="content">
-          {children}
-          <SpeedInsights />
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            {children}
+            <SpeedInsights />
+          </NextIntlClientProvider>
         </div>
         <Footer />
       </body>
