@@ -16,13 +16,10 @@ function LocalSwitcher() {
     }
 
     return (
-        <label className='border-2 rounded'>
-            <p className='sr-only'>Change language</p>
-            <select className='bg-transparent py-2' defaultValue={locale} onChange={onChangeLang}>
-                <option value='en'>English</option>
-                <option value='th'>Thai</option>
-            </select>
-        </label>
+        <select className='bg-transparent' defaultValue={locale} onChange={onChangeLang}>
+            <option value='en'>English</option>
+            <option value='th'>Thai</option>
+        </select>
     )
 }
 

@@ -24,13 +24,13 @@ function Navbar() {
 
   return (
     <nav className={visible ? 'navbar show' : 'navbar hide'}>
-      <div className="flex w-[90%] justify-between m-auto py-8">
-        <div className="logo">
-          <h2>SoYacht</h2>
+      <div className="flex justify-between h-[100%] items-center mx-8">
+        <div>
+          <h1>LOGO</h1>
         </div>
-        <div className="menu">
+        <div>
           <nav>
-            <ul className="flex gap-8">
+            <ul className="flex gap-12">
               <li>
                 <Link href="/">Home</Link>
               </li>
