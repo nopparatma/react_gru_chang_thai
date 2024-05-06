@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import { Link } from "../navigation";
 
-function Nav() {
+function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -50,4 +50,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Navbar;

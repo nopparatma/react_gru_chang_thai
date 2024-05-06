@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Nav from "./components/Nav";
+import Navbar from "../../components/Navbar";
+import { useMessages } from "next-intl";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,15 +15,23 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale }
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+
+  const messages = useMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>
-        <Nav />
-        <div className="content">{children}</div>
-        <SpeedInsights />
+        <Navbar />
+        <div className="content">
+          {children}
+          <SpeedInsights />
+        </div>
+        <Footer />
       </body>
     </html>
   );
