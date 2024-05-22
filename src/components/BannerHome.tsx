@@ -8,15 +8,15 @@ function BannerHome() {
 
     return (
         <>
-            <div className="h-screen">
+            <div className="sm:h-screen h-[880px]">
                 <Image
-                    className='absolute inset-0 w-full h-full brightness-50 object-cover z-0'
+                    className='brightness-50 object-cover sm:h-screen h-[880px] absolute z-0'
                     alt="main_background"
                     src={mainBackground}
                 />
-                <div className='flex flex-col relative pt-[80px] sm:flex-row h-full justify-between mx-8 z-10'>
+                <div className='relative flex flex-col pt-[80px] sm:flex-row h-full justify-between mx-8 z-10'>
                     <div className='flex-none flex flex-col text-center sm:text-left sm:justify-center'>
-                        <p className="text-gold-gradient text-[32px] sm:text-[52px]">Guru-Chang Antique</p>
+                        <p className="text-gold-gradient text-[32px] sm:text-[52px]">GruChangThai Antique</p>
                         <p className="text-gold-gradient text-[32px] sm:text-[52px]">Gold Jewelry</p>
                         <p className='text-white mt-4 text-[20px]'>The Perfect Jewels for you</p>
                         <div className='mt-8'>
@@ -24,11 +24,11 @@ function BannerHome() {
                                 Explore More
                             </button>
                         </div>
-                        <p className='text-white sm:mt-32 mt-16 text-[20px]'>Call: 084-8047253</p>
+                        <p className='text-white sm:mt-32 mt-8 text-[20px]'>Call: 084-8047253</p>
                     </div>
                     <div className='flex flex-col justify-end'>
                         <Image
-                            className='object-contain'
+                            className='object-cover'
                             alt="image_presenter"
                             src={imagePresenter}
                         />
