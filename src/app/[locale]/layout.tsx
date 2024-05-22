@@ -31,14 +31,14 @@ export default function RootLayout({
   return (
     <html className='bg-black' lang={locale}>
       <body className={inter.className}>
-        <Navbar />
         <div>
           <NextIntlClientProvider locale={locale} messages={messages}>
+            <Navbar />
             {children}
+            <Footer />
             <SpeedInsights />
           </NextIntlClientProvider>
         </div>
-        <Footer />
       </body>
     </html>
   );

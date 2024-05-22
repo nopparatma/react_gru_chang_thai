@@ -29,7 +29,7 @@ function Navbar() {
           <h1>LOGO</h1>
         </div>
         <div>
-          <nav>
+          <nav className="hidden sm:block">
             <ul className="flex gap-12">
               <li>
                 <Link href="/">Home</Link>
@@ -43,9 +43,14 @@ function Navbar() {
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
-              <LocalSwitcher />
+              <li>
+                <LocalSwitcher />
+              </li>
             </ul>
           </nav>
+          <div className="sm:hidden">
+            <LocalSwitcher />
+          </div>
         </div>
       </div>
     </nav>
