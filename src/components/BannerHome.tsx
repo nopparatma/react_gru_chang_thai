@@ -8,9 +8,9 @@ function BannerHome() {
 
     return (
         <>
-            <div className="sm:h-screen h-[880px]">
+            <div className="sm:h-screen h-[760px]">
                 <Image
-                    className='brightness-50 object-cover sm:h-screen h-[880px] absolute z-0'
+                    className='brightness-50 object-cover sm:h-screen h-[760px] absolute z-0'
                     alt="main_background"
                     src={mainBackground}
                 />
