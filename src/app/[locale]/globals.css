@@ -27,7 +27,6 @@
 }
 
 .text-gold-gradient {
-  font-size: 52px;
   font-weight: bold;
   background: linear-gradient(to right, #F9C924, #E4AF18, #FFF98C, #FFD440);
   -webkit-text-fill-color: transparent;

@@ -16,8 +16,8 @@ function BannerHome() {
                 />
                 <div className='flex flex-col relative pt-[80px] sm:flex-row h-full justify-between mx-8 z-10'>
                     <div className='flex-none flex flex-col text-center sm:text-left sm:justify-center'>
-                        <p className="text-gold-gradient">Guru-Chang Antique</p>
-                        <p className="text-gold-gradient">Gold Jewelry</p>
+                        <p className="text-gold-gradient text-[32px] sm:text-[52px]">Guru-Chang Antique</p>
+                        <p className="text-gold-gradient text-[32px] sm:text-[52px]">Gold Jewelry</p>
                         <p className='text-white mt-4 text-[20px]'>The Perfect Jewels for you</p>
                         <div className='mt-8'>
                             <button className='button-gold-gradient'>
@@ -28,7 +28,7 @@ function BannerHome() {
                     </div>
                     <div className='flex flex-col justify-end'>
                         <Image
-                            className='max-h-full object-contain'
+                            className='object-contain'
                             alt="image_presenter"
                             src={imagePresenter}
                         />
