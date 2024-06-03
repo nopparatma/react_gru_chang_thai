@@ -14,12 +14,14 @@ function BannerHome() {
           alt="main_background"
           src={mainBackground}
         />
-        <div className="relative flex h-full mx-8 z-10">
-          <div className="text-left my-auto">
-            <p className="text-gold-gradient text-6xl py-4">
+        <div className="relative flex flex-col h-full mx-8 z-10 justify-between">
+          <div className="sm:text-left text-center sm:my-auto my-[80px]">
+            <p className="text-gold-gradient sm:text-6xl text-3xl py-4">
               GruChangThai Antique
             </p>
-            <p className="text-gold-gradient text-6xl py-4">Gold Jewelry</p>
+            <p className="text-gold-gradient sm:text-6xl text-3xl py-4">
+              Gold Jewelry
+            </p>
             <p className="text-white mt-4 text-xl">
               The Perfect Jewels for you
             </p>
@@ -28,15 +30,17 @@ function BannerHome() {
                 Explore More
               </button>
             </div>
-            <p className="text-white mt-32 text-xl">Call: 084-8047253</p>
+            <p className="text-white sm:mt-32 mt-16 text-xl">
+              Call: 084-8047253
+            </p>
           </div>
-        </div>
-        <div className="">
-          <Image
-            className="object-contain z-20 absolute bottom-0 right-8 h-full w-auto"
-            alt="image_presenter"
-            src={imagePresenter}
-          />
+          <div>
+            <Image
+              className="object-contain sm:z-20 sm:absolute sm:bottom-0 sm:right-8 h-full w-auto"
+              alt="image_presenter"
+              src={imagePresenter}
+            />
+          </div>
         </div>
       </div>
     </>
