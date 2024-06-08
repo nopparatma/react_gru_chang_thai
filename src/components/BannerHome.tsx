@@ -10,7 +10,7 @@ function BannerHome() {
     <>
       <div className="h-screen">
         <Image
-          className="brightness-50 object-cover h-full absolute z-0"
+          className="brightness-50 object-cover h-screen absolute z-0"
           alt="main_background"
           src={mainBackground}
         />
