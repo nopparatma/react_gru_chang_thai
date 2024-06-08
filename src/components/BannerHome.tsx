@@ -14,29 +14,25 @@ function BannerHome() {
           alt="main_background"
           src={mainBackground}
         />
-        <div className="relative flex flex-col h-full mx-8 z-10 justify-between">
-          <div className="sm:text-left text-center sm:my-auto my-[80px]">
-            <p className="text-gold-gradient sm:text-6xl text-3xl py-4">
-              GruChangThai Antique
-            </p>
-            <p className="text-gold-gradient sm:text-6xl text-3xl py-4">
-              Gold Jewelry
-            </p>
-            <p className="text-white mt-4 text-xl">
-              The Perfect Jewels for you
-            </p>
-            <div className="mt-8">
-              <button className="button-gold-gradient text-xl">
+        <div className="relative grid grid-rows-2 lg:flex lg:justify-between h-full mx-8 z-10">
+          <div className="flex">
+            <div className="mx-auto lg:mx-0 lg:my-auto lg:text-left">
+              <p className="text-gold-gradient text-2xl lg:text-6xl py-4 mt-[80px] lg:mt-0">
+                GruChangThai Antique
+              </p>
+              <p className="text-gold-gradient text-2xl lg:text-6xl py-4">Gold Jewelry</p>
+              <p className="text-white mt-4 text-xl">
+                The Perfect Jewels for you
+              </p>
+              <button className="button-gold-gradient text-xl mt-8">
                 Explore More
               </button>
+              <p className="text-white mt-8 text-xl">Call: 084-8047253</p>
             </div>
-            <p className="text-white sm:mt-32 mt-16 text-xl">
-              Call: 084-8047253
-            </p>
           </div>
-          <div>
+          <div className="flex flex-col justify-end">
             <Image
-              className="object-contain sm:z-20 sm:absolute sm:bottom-0 sm:right-8 h-full w-auto"
+              className="object-contain max-h-full w-auto"
               alt="image_presenter"
               src={imagePresenter}
             />
