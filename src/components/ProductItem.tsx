@@ -17,10 +17,10 @@ function ProductItem(props: ProductItem) {
             alt="Image"
             width={400}
             height={400}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full brightness-50"
           />
           <div className="absolute bottom-0 w-full flex justify-center">
-            <p className="text-gold-gradient p-4">Your text here</p>
+            <p className="text-gold-gradient p-4">Product Code: {props.name}</p>
           </div>
         </div>
       </div>
