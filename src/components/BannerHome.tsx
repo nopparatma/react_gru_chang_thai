@@ -16,7 +16,7 @@ function BannerHome() {
         />
         <div className="relative grid grid-rows-2 sm:flex sm:justify-between h-full mx-8 z-10">
           <div className="flex">
-            <div className="mx-auto sm:mx-0 sm:my-auto sm:text-left">
+            <div className="mx-auto text-center sm:mx-0 sm:my-auto sm:text-left">
               <p className="text-gold-gradient text-2xl sm:text-6xl py-4 mt-[80px] sm:mt-0">
                 GruChangThai Antique
               </p>

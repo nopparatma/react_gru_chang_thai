@@ -1,8 +1,10 @@
-function AboutPage() {
+import React from "react";
+
+function ContactUsPage() {
   return (
     <div className="container mx-auto">
       <hr className="my-3" />
-      <h3>About Page</h3>
+      <h3>Contact Us Page</h3>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
         voluptatem, nisi omnis debitis nam atque facilis quia libero eum aliquid
@@ -13,4 +15,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default ContactUsPage;

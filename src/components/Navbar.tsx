@@ -23,7 +23,7 @@ function Navbar() {
   }, [prevScrollPos, visible]);
 
   return (
-    <nav className={visible ? 'navbar show' : 'navbar hide'}>
+    <nav className={visible ? "navbar show" : "navbar hide"}>
       <div className="flex justify-between h-[100%] items-center mx-8">
         <div>
           <h1>LOGO</h1>
@@ -35,13 +35,13 @@ function Navbar() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/antique">Antique</Link>
               </li>
               <li>
-                <Link href="/service">Service</Link>
+                <Link href="/about-us">About Us</Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact-us">Contact Us</Link>
               </li>
               <li>
                 <LocalSwitcher />

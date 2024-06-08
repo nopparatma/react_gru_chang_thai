@@ -1,10 +1,10 @@
 import React from "react";
 
-function ContactPage() {
+function AntiquePage() {
   return (
     <div className="container mx-auto">
       <hr className="my-3" />
-      <h3>Contact Page</h3>
+      <h3>Antique Page</h3>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
         voluptatem, nisi omnis debitis nam atque facilis quia libero eum aliquid
@@ -15,4 +15,4 @@ function ContactPage() {
   );
 }
 
-export default ContactPage;
+export default AntiquePage;
