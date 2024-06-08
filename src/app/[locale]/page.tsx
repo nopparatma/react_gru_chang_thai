@@ -29,8 +29,8 @@ export default function Home() {
         </h1>
 
         <div className="mx-8 sm:mx-20 mt-8 gap-10 grid grid-cols-1 sm:grid-cols-3">
-          {contentItems.map((a) => (
-            <ProductItem name={a.name} image={a.image} />
+          {contentItems.map((a, index) => (
+            <ProductItem key={index} name={a.name} image={a.image} />
           ))}
         </div>
 

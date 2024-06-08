@@ -13,6 +13,7 @@ function BannerHome() {
           className="brightness-50 object-cover h-screen absolute z-0"
           alt="main_background"
           src={mainBackground}
+          priority
         />
         <div className="relative grid grid-rows-2 sm:flex sm:justify-between h-full mx-8 z-10">
           <div className="flex">
