@@ -14,13 +14,13 @@ function BannerHome() {
           alt="main_background"
           src={mainBackground}
         />
-        <div className="relative grid grid-rows-2 lg:flex lg:justify-between h-full mx-8 z-10">
+        <div className="relative grid grid-rows-2 sm:flex sm:justify-between h-full mx-8 z-10">
           <div className="flex">
-            <div className="mx-auto lg:mx-0 lg:my-auto lg:text-left">
-              <p className="text-gold-gradient text-2xl lg:text-6xl py-4 mt-[80px] lg:mt-0">
+            <div className="mx-auto sm:mx-0 sm:my-auto sm:text-left">
+              <p className="text-gold-gradient text-2xl sm:text-6xl py-4 mt-[80px] sm:mt-0">
                 GruChangThai Antique
               </p>
-              <p className="text-gold-gradient text-2xl lg:text-6xl py-4">Gold Jewelry</p>
+              <p className="text-gold-gradient text-2xl sm:text-6xl py-4">Gold Jewelry</p>
               <p className="text-white mt-4 text-xl">
                 The Perfect Jewels for you
               </p>
