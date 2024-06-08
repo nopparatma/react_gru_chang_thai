@@ -12,11 +12,12 @@ function ProductItem(props: ProductItem) {
       <div className="bg-green-950 h-[400px] flex">
         <div className="flex-grow relative">
           <Image
+            placeholder="empty"
             src={props.image}
             alt="Image"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full"
+            width={400}
+            height={400}
+            className="object-cover w-full h-full"
           />
           <div className="absolute bottom-0 w-full flex justify-center">
             <p className="text-gold-gradient p-4">Your text here</p>
