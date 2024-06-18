@@ -5,7 +5,7 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["via.placeholder.com"], // Add the external domain here
+    domains: ["via.placeholder.com", "retailjewellerindia.com"], // Add the external domain here
   },
 };
 
