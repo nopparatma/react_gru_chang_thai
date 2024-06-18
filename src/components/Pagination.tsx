@@ -25,7 +25,7 @@ const Pagination: React.FC<PaginationProps> = ({
       <button
         key="prev"
         onClick={() => handleClick(currentPage - 1)}
-        className="px-3 py-1 bg-red-950 rounded-l-md"
+        className="px-3 py-1 border border-white rounded-l-md"
       >
         &lt;
       </button>
@@ -36,7 +36,7 @@ const Pagination: React.FC<PaginationProps> = ({
         <button
           key={1}
           onClick={() => handleClick(1)}
-          className="px-3 py-1 bg-red-950"
+          className="px-3 py-1"
         >
           1
         </button>
@@ -55,7 +55,7 @@ const Pagination: React.FC<PaginationProps> = ({
         <button
           key={currentPage - 1}
           onClick={() => handleClick(currentPage - 1)}
-          className="px-3 py-1 bg-red-950"
+          className="px-3 py-1"
         >
           {currentPage - 1}
         </button>
@@ -66,7 +66,7 @@ const Pagination: React.FC<PaginationProps> = ({
       <button
         key={currentPage}
         onClick={() => handleClick(currentPage)}
-        className="px-3 py-1 bg-yellow-500"
+        className="px-3 py-1 button-gold-gradient"
       >
         {currentPage}
       </button>
@@ -77,7 +77,7 @@ const Pagination: React.FC<PaginationProps> = ({
         <button
           key={currentPage + 1}
           onClick={() => handleClick(currentPage + 1)}
-          className="px-3 py-1 bg-red-950"
+          className="px-3 py-1"
         >
           {currentPage + 1}
         </button>
@@ -96,7 +96,7 @@ const Pagination: React.FC<PaginationProps> = ({
         <button
           key={totalPages}
           onClick={() => handleClick(totalPages)}
-          className="px-3 py-1 bg-red-950"
+          className="px-3 py-1"
         >
           {totalPages}
         </button>
@@ -107,7 +107,7 @@ const Pagination: React.FC<PaginationProps> = ({
       <button
         key="next"
         onClick={() => handleClick(currentPage + 1)}
-        className="px-3 py-1 bg-red-950 rounded-r-md"
+        className="px-3 py-1 border border-white rounded-r-md"
       >
         &gt;
       </button>
@@ -117,9 +117,9 @@ const Pagination: React.FC<PaginationProps> = ({
   };
 
   return (
-    <div className="flex flex-col items-center bg-black text-white py-4 space-y-2 sm:space-y-0 sm:flex-row sm:justify-between">
-      <span>
-        {` Showing ${entriesPerPage * (currentPage - 1) + 1} to 
+    <div className="flex flex-col px-4 items-center bg-[#1A0202] rounded-md text-white py-4 space-y-2 sm:space-y-0 sm:flex-row sm:justify-between">
+      <span className="">
+        {`Showing ${entriesPerPage * (currentPage - 1) + 1} to 
         ${Math.min(
           entriesPerPage * currentPage,
           totalEntries
