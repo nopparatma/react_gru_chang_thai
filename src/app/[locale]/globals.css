@@ -40,3 +40,10 @@
   border-radius: 6px;
   background: linear-gradient(to right, #F9C924, #E4AF18, #FFF98C, #FFD440);
 }
+
+.border-gold-gradient {
+  position: relative;
+  background: linear-gradient(to right, #F9C924, #E4AF18, #FFF98C, #FFD440);
+  padding: 1px;
+  border-radius: 8px;
+}

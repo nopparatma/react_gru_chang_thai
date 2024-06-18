@@ -17,7 +17,7 @@ export default function Home() {
 
         <div className="mx-8 sm:mx-20 mt-8 gap-10 grid grid-cols-1 sm:grid-cols-3">
           {mockContentItems.map((a, index) => (
-            <ProductItem key={index} name={a.name} image={a.image} />
+            <ProductItem key={index} name={a.name} imageUrl={a.imageUrl} />
           ))}
         </div>
 
