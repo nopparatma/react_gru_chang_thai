@@ -19,6 +19,7 @@ import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import CloseIcon from "@mui/icons-material/Close";
+import { usePathname } from "next/navigation";
 
 // Define navigation links to avoid duplication
 const navLinks = [
@@ -35,6 +36,24 @@ const Navbar = () => {
   const prevScrollPos = useRef<number>(
     typeof window !== "undefined" ? window.pageYOffset : 0
   );
+  const pathname = usePathname();
+
+  const getLastPathSegment = useCallback((filePath: string): string => {
+    // Find the last index of '/' and '\\' and take the maximum
+    const lastSlash = filePath.lastIndexOf("/");
+    const lastBackslash = filePath.lastIndexOf("\\");
+    const lastSeparatorIndex = Math.max(lastSlash, lastBackslash);
+
+    // If no separator is found or the path is too short, return "/"
+    if (lastSeparatorIndex === -1 || lastSeparatorIndex < 2) {
+      return "/";
+    }
+
+    // Extract the last segment after the last separator
+    const lastSegment = filePath.substring(lastSeparatorIndex + 1);
+
+    return `/${lastSegment}`;
+  }, []);
 
   // Scroll handler using useRef to persist previous scroll position
   const handleScroll = useCallback(() => {
@@ -99,13 +118,23 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden sm:block">
             <ul className="flex space-x-8">
-              {navLinks.map(({ href, labelKey }) => (
-                <li key={href}>
-                  <Link href={href} className="hover:text-yellow-600">
-                    {t(labelKey)}
-                  </Link>
-                </li>
-              ))}
+              {navLinks.map(({ href, labelKey }) => {
+                const isActive: boolean = getLastPathSegment(pathname) === href;
+                console.log(pathname);
+                console.log(getLastPathSegment(pathname));
+                return (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className={`hover:text-yellow-600 ${
+                        isActive ? "text-gold-gradient" : ""
+                      }`}
+                    >
+                      {t(labelKey)}
+                    </Link>
+                  </li>
+                );
+              })}
               <li>
                 <LocalSwitcher />
               </li>
@@ -134,33 +163,41 @@ const Navbar = () => {
           keepMounted: true, // Better open performance on mobile.
         }}
       >
-        <div className="w-screen flex flex-col h-full">
+        <div className="w-screen flex flex-col h-full bg-black">
           {/* Drawer Header */}
           <div className="flex justify-between items-center p-4 border-b">
-            <h2 className="text-lg font-bold">เมนู</h2>
+            <h2 className="text-lg font-bold text-white">เมนู</h2>
             <IconButton
               onClick={closeMobileMenu}
               aria-label="close mobile menu"
             >
-              <CloseIcon />
+              <CloseIcon style={{ color: "white" }} />
             </IconButton>
           </div>
 
           {/* Drawer Content */}
           <List component="nav" className="flex-grow">
-            {navLinks.map(({ href, labelKey }) => (
-              <ListItemButton
-                key={href}
-                component={Link}
-                href={href}
-                onClick={closeMobileMenu}
-              >
-                <ListItemText
-                  primary={t(labelKey)}
-                  primaryTypographyProps={{ className: "font-cloud" }}
-                />
-              </ListItemButton>
-            ))}
+            {navLinks.map(({ href, labelKey }) => {
+              const isActive: boolean = getLastPathSegment(pathname) === href;
+              return (
+                <ListItemButton
+                  key={href}
+                  component={Link}
+                  href={href}
+                  onClick={closeMobileMenu}
+                  selected={isActive} // MUI provides selected styling
+                >
+                  <ListItemText
+                    primary={t(labelKey)}
+                    primaryTypographyProps={{
+                      className: isActive
+                        ? "text-gold-gradient font-cloud"
+                        : "font-cloud text-white",
+                    }}
+                  />
+                </ListItemButton>
+              );
+            })}
             <ListItemButton>
               <LocalSwitcher />
             </ListItemButton>
