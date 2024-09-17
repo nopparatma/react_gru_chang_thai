@@ -12,12 +12,11 @@ const cloud = localfont({
   src: [
     {
       path: "../../../public/fonts/cloud/Cloud-Light.otf",
-      style: 'normal',
     },
-    // {
-    //   path: "../../../public/fonts/cloud/Cloud-Bold.otf",
-    //   style: 'bold',
-    // },
+    {
+      path: "../../../public/fonts/cloud/Cloud-Bold.otf",
+      weight: '500',
+    },
   ],
 });
 
