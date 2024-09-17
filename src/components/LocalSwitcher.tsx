@@ -18,7 +18,7 @@ function LocalSwitcher() {
 
   return (
     <select
-      className="bg-transparent"
+      className="bg-transparent hover:text-yellow-600"
       defaultValue={locale}
       onChange={onChangeLang}
     >
