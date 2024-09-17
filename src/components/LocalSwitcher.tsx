@@ -23,7 +23,7 @@ function LocalSwitcher() {
       onChange={onChangeLang}
     >
       <option value="en">English</option>
-      <option value="th">Thai</option>
+      <option value="th">ไทย</option>
     </select>
   );
 }

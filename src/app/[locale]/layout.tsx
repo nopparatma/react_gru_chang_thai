@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/react";
+import { description, title } from "@/constants/constants";
 
 const cloud = localfont({
   src: [
@@ -24,8 +25,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("metadata");
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: t(title),
+    description: t(description),
   };
 }
 

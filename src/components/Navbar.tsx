@@ -3,10 +3,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "../navigation";
 import LocalSwitcher from "./LocalSwitcher";
+import { useTranslations } from "next-intl";
+import {
+  homePage,
+  antiquePage,
+  aboutUsPage,
+  contactUsPage,
+} from "@/constants/constants";
 
 function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const t = useTranslations();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,16 +40,16 @@ function Navbar() {
           <nav className="hidden sm:block">
             <ul className="flex gap-12">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/">{t(homePage)}</Link>
               </li>
               <li>
-                <Link href="/antique">Antique</Link>
+                <Link href="/antique">{t(antiquePage)}</Link>
               </li>
               <li>
-                <Link href="/about-us">About Us</Link>
+                <Link href="/about-us">{t(aboutUsPage)}</Link>
               </li>
               <li>
-                <Link href="/contact-us">Contact Us</Link>
+                <Link href="/contact-us">{t(contactUsPage)}</Link>
               </li>
               <li>
                 <LocalSwitcher />

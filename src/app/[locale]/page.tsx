@@ -1,6 +1,7 @@
 import BannerHome from "@/components/BannerHome";
 import Pagination from "@/components/Pagination";
 import ProductItem from "@/components/ProductItem";
+import { homePage } from "@/constants/constants";
 import { mockContentItems } from "@/mocks/mock";
 import { useTranslations } from "next-intl";
 
@@ -12,7 +13,7 @@ export default function Home() {
       <BannerHome />
       <div className="mt-8 flex flex-col">
         <h1 className="mx-auto text-gold-gradient text-[52px]">
-          {t("homePage")}
+          {t(homePage)}
         </h1>
 
         <div className="mx-8 sm:mx-20 mt-8 gap-10 grid grid-cols-1 sm:grid-cols-3">
