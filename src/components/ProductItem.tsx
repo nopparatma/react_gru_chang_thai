@@ -43,7 +43,7 @@ function ProductItem(props: ProductItem) {
             src={props.imageUrl}
             alt={props.name}
             fill
-            className="object-cover "
+            className="object-cover transition-none transform-none"
           />
         </div>
 

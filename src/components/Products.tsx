@@ -3,6 +3,9 @@ import ProductItem from "@/components/ProductItem";
 import { ourBestSellers, ourBestSellersDetail } from "@/constants/constants";
 import { mockContentItems } from "@/mocks/mock";
 import { useTranslations } from "next-intl";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 export default function Products() {
   const t = useTranslations();
@@ -17,22 +20,39 @@ export default function Products() {
       </div>
 
       <div className="w-full px-10">
-        <div className="flex gap-5 overflow-x-auto scrollbar-hide pb-4">
+        <Swiper
+          modules={[Autoplay]}
+          loop={true}
+          slidesPerView="auto"
+          spaceBetween={20}
+          centeredSlides={false}
+          autoplay={{
+            delay: 2000,
+            pauseOnMouseEnter: true,
+          }}
+          speed={2000}
+          allowTouchMove={false}
+          effect="slide"
+          grabCursor={false}
+          className="w-full products-swiper"
+        >
           {mockContentItems.map((item, index) => (
-            <div key={index} className="flex-shrink-0 w-[280px]">
-              <ProductItem
-                name={item.name}
-                imageUrl={item.imageUrl}
-                category={item.category}
-                price={item.price}
-                originalPrice={item.originalPrice}
-                rating={item.rating}
-                reviewCount={item.reviewCount}
-                discount={item.discount}
-              />
-            </div>
+            <SwiperSlide key={index} className="!w-auto">
+              <div className="w-[280px]">
+                <ProductItem
+                  name={item.name}
+                  imageUrl={item.imageUrl}
+                  category={item.category}
+                  price={item.price}
+                  originalPrice={item.originalPrice}
+                  rating={item.rating}
+                  reviewCount={item.reviewCount}
+                  discount={item.discount}
+                />
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </div>
   );
