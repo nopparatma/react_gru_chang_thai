@@ -1,10 +1,17 @@
 {
-    "metadata": {
-        "title": "กรุช่างไทย",
-        "description": "คุณค่าแห่งงานช่างฝีมือ คุณค่าแห่งอารยธรรมไทย"
-    },
-    "homePage": "หน้าหลัก",
-    "antiquePage": "เครื่องทองโบราณ",
-    "aboutUsPage": "เกี่ยวกับเรา",
-    "contactUsPage": "ติดต่อเรา"
+  "metadata": {
+    "title": "กรุช่างไทย",
+    "description": "คุณค่าแห่งงานช่างฝีมือ คุณค่าแห่งอารยธรรมไทย"
+  },
+  "homePage": "หน้าหลัก",
+  "antiquePage": "เครื่องทองโบราณ",
+  "aboutUsPage": "เกี่ยวกับเรา",
+  "contactUsPage": "ติดต่อเรา",
+  "ourBestSellers": "สินค้าขายดี",
+  "ourBestSellersDetail": "เครื่องประดับของเราผลิตโดยช่างฝีมือชั้นยอดและคัดสรรมาอย่างดีเพื่อสะท้อนสไตล์และบุคลิกภาพของคุณ",
+  "necklacesPendants": "สร้อยคอ & จี้",
+  "rings": "แหวน",
+  "accessories": "เครื่องประดับ",
+  "earrings": "ต่างหู",
+  "pearls": "ไข่มุก"
 }

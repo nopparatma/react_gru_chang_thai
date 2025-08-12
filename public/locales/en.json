@@ -1,10 +1,17 @@
 {
-    "metadata": {
-        "title": "GruChangThai",
-        "description": "The value of skilled craftsmanship. The value of Thai culture."
-    },
-    "homePage": "Home",
-    "antiquePage": "Antique",
-    "aboutUsPage": "About Us",
-    "contactUsPage": "Contact Us"
+  "metadata": {
+    "title": "GruChangThai",
+    "description": "The value of skilled craftsmanship. The value of Thai culture."
+  },
+  "homePage": "Home",
+  "antiquePage": "Antique",
+  "aboutUsPage": "About Us",
+  "contactUsPage": "Contact Us",
+  "ourBestSellers": "Our Best Sellers",
+  "ourBestSellersDetail": "Our jewelry is made by the finest artists and carefully selected to reflect your style and personality.",
+  "necklacesPendants": "NECKLACES & PENDANTS",
+  "rings": "RINGS",
+  "accessories": "ACCESSORIES",
+  "earrings": "EARRINGS",
+  "pearls": "PEARLS"
 }

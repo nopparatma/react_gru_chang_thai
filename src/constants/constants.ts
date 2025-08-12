@@ -5,3 +5,6 @@ export const homePage = "homePage";
 export const antiquePage = "antiquePage";
 export const aboutUsPage = "aboutUsPage";
 export const contactUsPage = "contactUsPage";
+
+export const ourBestSellers = "ourBestSellers";
+export const ourBestSellersDetail = "ourBestSellersDetail";

@@ -60,7 +60,7 @@ function BannerHome() {
         }}
         speed={1000}
         loop={true}
-        className="absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full h-full banner-swiper"
         style={{ zIndex: 1 }}
         onSlideChange={handleSlideChange}
         onSlideChangeTransitionStart={handleSlideChange}
