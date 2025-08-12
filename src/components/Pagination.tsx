@@ -33,11 +33,7 @@ const Pagination: React.FC<PaginationProps> = ({
 
     if (currentPage > 1) {
       buttons.push(
-        <button
-          key={1}
-          onClick={() => handleClick(1)}
-          className="px-3 py-1"
-        >
+        <button key={1} onClick={() => handleClick(1)} className="px-3 py-1">
           1
         </button>
       );
