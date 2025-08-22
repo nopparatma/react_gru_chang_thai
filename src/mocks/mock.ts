@@ -11,7 +11,7 @@ type MainCategory = {
 
 export const mockContentItems: MainCategory[] = [
   {
-    name: "Golden Dragon Necklace",
+    name: "1",
     imageUrl:
       "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
     category: "necklacesPendants",
@@ -20,7 +20,7 @@ export const mockContentItems: MainCategory[] = [
     reviewCount: 5,
   },
   {
-    name: "Thai Royal Ring",
+    name: "2",
     imageUrl:
       "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
     category: "rings",
@@ -29,7 +29,7 @@ export const mockContentItems: MainCategory[] = [
     reviewCount: 5,
   },
   {
-    name: "Emerald Stud Earrings",
+    name: "3",
     imageUrl:
       "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
     category: "earrings",
@@ -38,7 +38,7 @@ export const mockContentItems: MainCategory[] = [
     reviewCount: 5,
   },
   {
-    name: "Traditional Thai Bracelet",
+    name: "4",
     imageUrl:
       "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
     category: "accessories",
@@ -49,7 +49,7 @@ export const mockContentItems: MainCategory[] = [
     discount: 87,
   },
   {
-    name: "Golden Lotus Earrings",
+    name: "5",
     imageUrl:
       "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
     category: "earrings",
@@ -58,7 +58,7 @@ export const mockContentItems: MainCategory[] = [
     reviewCount: 5,
   },
   {
-    name: "Pearl Diamond Ring",
+    name: "6",
     imageUrl:
       "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
     category: "pearls",
@@ -67,7 +67,54 @@ export const mockContentItems: MainCategory[] = [
     reviewCount: 5,
   },
   {
-    name: "Pearl Diamond Ring 2",
+    name: "7",
+    imageUrl:
+      "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
+    category: "necklacesPendants",
+    price: 947.39,
+    rating: 5,
+    reviewCount: 5,
+  },
+  {
+    name: "8",
+    imageUrl:
+      "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
+    category: "rings",
+    price: 922.56,
+    rating: 5,
+    reviewCount: 5,
+  },
+  {
+    name: "9",
+    imageUrl:
+      "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
+    category: "earrings",
+    price: 509.22,
+    rating: 4,
+    reviewCount: 5,
+  },
+  {
+    name: "10",
+    imageUrl:
+      "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
+    category: "accessories",
+    price: 93.3,
+    originalPrice: 729.94,
+    rating: 5,
+    reviewCount: 5,
+    discount: 87,
+  },
+  {
+    name: "11",
+    imageUrl:
+      "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
+    category: "earrings",
+    price: 556.96,
+    rating: 5,
+    reviewCount: 5,
+  },
+  {
+    name: "12",
     imageUrl:
       "https://retailjewellerindia.com/wp-content/uploads/2020/01/3t8a7815-2-1024x556.jpg",
     category: "pearls",
