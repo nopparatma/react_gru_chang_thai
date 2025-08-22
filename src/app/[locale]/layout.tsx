@@ -16,7 +16,7 @@ const cloud = localfont({
     },
     {
       path: "../../../public/fonts/cloud/Cloud-Bold.otf",
-      weight: '500',
+      weight: "500",
     },
   ],
 });
@@ -27,6 +27,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: t(title),
     description: t(description),
+    icons: {
+      icon: "/images/logo.png",
+      shortcut: "/images/logo.png",
+      apple: "/images/logo.png",
+    },
   };
 }
 
@@ -41,6 +46,11 @@ export default function RootLayout({
 
   return (
     <html className="bg-black" lang={locale}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet" />
+      </head>
       <body className={`${cloud.className}`}>
         <div>
           <NextIntlClientProvider locale={locale} messages={messages}>

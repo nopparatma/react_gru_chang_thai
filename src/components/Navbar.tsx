@@ -110,7 +110,7 @@ const Navbar = () => {
       <div className="flex justify-between h-full items-center px-4 my-auto md:px-8">
         {/* Logo */}
         <div>
-          <h1 className="text-xl font-bold">LOGO</h1>
+          <h1 className="text-2xl" style={{fontFamily: 'Charmonman, cursive', fontWeight: 700}}>กรุช่างไทย</h1>
         </div>
 
         {/* Navigation Links & Hamburger Icon */}

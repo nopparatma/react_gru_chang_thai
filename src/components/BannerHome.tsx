@@ -100,45 +100,34 @@ function BannerHome() {
       >
         {/* Content */}
         <div className="flex-1 max-w-2xl text-center sm:text-left">
-          {/* Category Label */}
-          <div className="mb-6">
-            <span
-              className="text-sm sm:text-base text-white font-medium tracking-wider uppercase"
-              style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}
-            >
-              LUXURY NECKLACE
-            </span>
-          </div>
-
           {/* Main Heading */}
           <h1 className="mb-8">
             <div
               className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-2 text-white"
-              style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}
+              style={{
+                textShadow: "2px 2px 4px rgba(0,0,0,0.8)",
+                fontFamily: "Charmonman, cursive",
+                fontWeight: 700,
+              }}
             >
-              GRUCHANGTHAI
-            </div>
-            <div
-              className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight text-white"
-              style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}
-            >
-              Anique
+              กรุช่างไทย
             </div>
           </h1>
 
           {/* Description */}
           <p
-            className="text-white text-lg sm:text-xl mb-8 leading-relaxed"
-            style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+            className="text-white text-2xl sm:text-3xl py-4 leading-relaxed"
+            style={{
+              textShadow: "1px 1px 2px rgba(0,0,0,0.8)",
+              fontFamily: "Charmonman, cursive",
+            }}
           >
-            Gold Jewelry
-            <br />
-            The Perfect Jewels For You.
+            คุณค่าแห่งงานช่างฝีมือ คุณค่าแห่งอารยธรรมไทย
           </p>
 
           {/* CTA Button */}
           <button
-            className="px-8 py-4 text-lg font-semibold text-amber-900 rounded-lg hover:scale-105 transition-all duration-300 border-2 border-transparent"
+            className="mt-8 px-8 py-4 text-lg font-semibold text-amber-900 rounded-lg hover:scale-105 transition-all duration-300 border-2 border-transparent"
             style={{
               background:
                 "linear-gradient(135deg, #FFE55C 0%, #FFD700 25%, #DAA520 50%, #FFD700 75%, #FFEC8C 100%)",
