@@ -64,7 +64,7 @@ export default function Products() {
       </div>
 
       <div
-        className="w-full px-10"
+        className="w-full md:px-10"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
