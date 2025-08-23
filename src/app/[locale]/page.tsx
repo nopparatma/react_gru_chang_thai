@@ -1,4 +1,5 @@
 import BannerHome from "@/components/BannerHome";
+import Categories from "@/components/Categories";
 import Products from "@/components/Products";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <BannerHome />
       <Products />
+      <Categories />
     </main>
   );
 }

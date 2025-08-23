@@ -55,7 +55,7 @@ export default function Products() {
   }, [api]);
 
   return (
-    <div className="my-20 flex flex-col items-center justify-center">
+    <div className="my-12 flex flex-col items-center justify-center">
       <div className="flex flex-col items-center gap-4 mb-12">
         <p className="text-4xl text-gold-gradient font-bold">
           {t(ourBestSellers)}
