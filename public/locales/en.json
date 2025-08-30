@@ -13,5 +13,105 @@
   "rings": "RINGS",
   "accessories": "ACCESSORIES",
   "earrings": "EARRINGS",
-  "pearls": "PEARLS"
+  "pearls": "PEARLS",
+  "aboutUs": {
+    "title": "About Us",
+    "subtitle": "Preserving Thai Heritage Through Exquisite Craftsmanship",
+    "intro": "Welcome to กรุช่างไทย (Gru Chang Thai), where the timeless art of Thai craftsmanship meets contemporary elegance. We are dedicated to preserving and celebrating Thailand's rich cultural heritage through our collection of authentic antique jewelry and handcrafted treasures.",
+    "ourStory": {
+      "title": "Our Story",
+      "content": "Founded with a passion for Thai cultural preservation, กรุช่างไทย has been a guardian of traditional craftsmanship for generations. Our journey began with a simple mission: to honor the skilled artisans who have shaped Thailand's artistic legacy and to share their exceptional work with the world."
+    },
+    "craftsmanship": {
+      "title": "Master Craftsmanship",
+      "content": "Each piece in our collection represents hours of meticulous work by master craftsmen who have inherited techniques passed down through generations. From intricate gold work to delicate gem setting, every item tells a story of dedication, skill, and cultural pride."
+    },
+    "heritage": {
+      "title": "Cultural Heritage",
+      "content": "We believe that authentic Thai antiques and traditional jewelry are more than just beautiful objects – they are vessels of history, culture, and artistic expression. Our curated collection showcases the evolution of Thai design, from ancient royal influences to regional artistic traditions."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To bridge the gap between Thailand's glorious past and its vibrant future by offering carefully selected antique pieces and contemporary interpretations of classical designs. We are committed to supporting local artisans and preserving traditional techniques for future generations."
+    },
+    "values": {
+      "title": "Our Values",
+      "authenticity": {
+        "title": "Authenticity",
+        "description": "Every piece is carefully verified for its historical significance and craftsmanship quality."
+      },
+      "heritage": {
+        "title": "Heritage Preservation",
+        "description": "We are committed to preserving Thai cultural traditions and supporting local artisans."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We maintain the highest standards in both our products and customer service."
+      },
+      "respect": {
+        "title": "Cultural Respect",
+        "description": "We honor the cultural significance and sacred nature of traditional Thai art forms."
+      }
+    }
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch with กรุช่างไทย",
+    "intro": "We'd love to hear from you. Whether you're interested in our collection, have questions about Thai craftsmanship, or need assistance with your purchase, our team is here to help.",
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number (optional)",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is this regarding?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "submit": "Send Message",
+      "required": "Required fields are marked with *"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Visit Our Store",
+        "line1": "123 Heritage Street",
+        "line2": "Old Quarter, Bangkok 10200",
+        "line3": "Thailand"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "monday": "Monday - Friday: 9:00 AM - 7:00 PM",
+        "weekend": "Saturday - Sunday: 10:00 AM - 6:00 PM",
+        "holiday": "Closed on major Thai holidays"
+      },
+      "contact": {
+        "title": "Get in Touch",
+        "phone": "+66 (0) 2-123-4567",
+        "email": "info@gruchang-thai.com",
+        "whatsapp": "+66 (0) 91-234-5678"
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "consultation": {
+        "title": "Expert Consultation",
+        "description": "Get professional advice on antique jewelry and Thai craftsmanship"
+      },
+      "authentication": {
+        "title": "Authentication Service",
+        "description": "Verify the authenticity of your Thai antique pieces"
+      },
+      "customization": {
+        "title": "Custom Orders",
+        "description": "Commission bespoke pieces inspired by traditional Thai designs"
+      },
+      "restoration": {
+        "title": "Restoration Service",
+        "description": "Professional restoration of vintage and antique jewelry"
+      }
+    }
+  }
 }
